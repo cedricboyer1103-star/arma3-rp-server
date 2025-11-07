@@ -1,0 +1,235 @@
+/*
+    ═══════════════════════════════════════════════════════════════
+    📱 description.ext - Legion RP Malden
+    ═══════════════════════════════════════════════════════════════
+    Dernière mise à jour : 2025-11-07 09:13:27
+    Auteur : cedricboyer1103-star
+    ═══════════════════════════════════════════════════════════════
+*/
+
+author = "Legion RP";
+onLoadName = "Legion RP - Malden";
+onLoadMission = "Serveur Legion RP avec système complet";
+loadScreen = "";
+briefingName = "Legion RP Malden";
+
+enableDebugConsole = 1;
+allowFunctionsLog = 1;
+disableChannels[] = {};
+enableItemsDropping = 0;
+
+respawn = "BASE";
+respawnDelay = 5;
+respawnDialog = 1;
+respawnOnStart = -1;
+
+// ═══════════════════════════════════════════════════════════════
+// 📁 THE-PROGRAMMER - CORE
+// ═══════════════════════════════════════════════════════════════
+
+#include "CfgRemoteExec.hpp"
+#include "The-Programmer\script_macros.hpp"
+#include "The-Programmer\theprogrammer_dialog_master.cpp"
+
+// ═══════════════════════════════════════════════════════════════
+// 📁 INCLUDES - DIALOGUES LEGION RP
+// ═══════════════════════════════════════════════════════════════
+
+// Définitions de base en premier
+#include "dialogs\defines.hpp"
+
+// Configurations
+#include "config\Config_Spawn.hpp"
+#include "config\Config_Vehicles.hpp"
+
+// Dialogues The-Programmer
+#include "The-Programmer\KeyTransfer\dialogs\key_transfer.hpp"
+
+// Dialogues Legion RP
+#include "dialogs\phone_dialog.hpp"
+#include "dialogs\orange_base_controls.hpp"
+#include "dialogs\orange_shop_dialog.hpp"
+#include "dialogs\garage_dialog.hpp"
+#include "dialogs\spawnMenu.hpp"
+#include "dialogs\phone_3d_dialog.hpp"
+
+// ═══════════════════════════════════════════════════════════════
+// 📁 FUNCTIONS CONFIGURATION
+// ═══════════════════════════════════════════════════════════════
+
+class CfgFunctions {
+    class TheProgrammer_Core {
+        tag = "theprogrammer_core";
+        class Functions {
+            file = "The-Programmer\Core\Functions\Client";
+            class clientInit {};
+        };
+    };
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 🎵 SONS
+// ═══════════════════════════════════════════════════════════════
+
+class CfgSounds {
+    sounds[] = {};
+    
+    class phone_ring {
+        name = "phone_ring";
+        sound[] = {"sounds\phone_ring.ogg", 1, 1, 100};
+        titles[] = {};
+    };
+    
+    class notification {
+        name = "notification";
+        sound[] = {"sounds\notification.ogg", 1, 1, 50};
+        titles[] = {};
+    };
+};
+
+#include "The-Programmer\Iphone_XI\Sounds.hpp"
+
+// ═══════════════════════════════════════════════════════════════
+// 📱 NOTIFICATIONS
+// ═══════════════════════════════════════════════════════════════
+
+class CfgNotifications {
+    class OrangeNotification {
+        title = "Orange Legion";
+        iconPicture = "\a3\ui_f\data\IGUI\Cfg\Actions\mobile_ca.paa";
+        description = "%1";
+        duration = 5;
+        priority = 5;
+    };
+    
+    class PhoneNotification {
+        title = "iPhone XI";
+        iconPicture = "\a3\ui_f\data\IGUI\Cfg\Actions\mobile_ca.paa";
+        description = "%1";
+        duration = 5;
+        priority = 5;
+    };
+};
+
+class CfgDebriefing {
+    class End1 {
+        title = "Mission terminée";
+        subtitle = "";
+        description = "Merci d'avoir joué sur Legion RP !";
+    };
+    
+    class kick {
+        title = "Global banned";
+        description = "You're not allowed to join this server cause you're banned by the-programmer.com";
+    };
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 🎮 PARAMÈTRES
+// ═══════════════════════════════════════════════════════════════
+
+class Params {
+    class DayLength {
+        title = "Durée du jour";
+        values[] = {1, 2, 4, 8, 12, 24};
+        texts[] = {"1h", "2h", "4h", "8h", "12h", "24h"};
+        default = 4;
+    };
+    
+    class StartingMoney {
+        title = "Argent de départ";
+        values[] = {0, 1000, 5000, 10000, 50000};
+        texts[] = {"0€", "1000€", "5000€", "10000€", "50000€"};
+        default = 5000;
+    };
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 📝 HEADER
+// ═══════════════════════════════════════════════════════════════
+
+class Header {
+    gameType = RPG;
+    minPlayers = 1;
+    maxPlayers = 100;
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 🎭 ANIMATIONS iPhone 3D
+// ═══════════════════════════════════════════════════════════════
+
+class CfgGesturesMale {
+    class Default;
+    
+    class LEG_Phone_Idle: Default {
+        file = "\TheProgrammer_IphoneXI\anims\LEG_Phone_Idle.rtm";
+        speed = 1;
+        looped = 1;
+        mask = "handsWeapon";
+        rightHandIKBeg = 1;
+        rightHandIKEnd = 1;
+    };
+    
+    class LEG_Phone_Call: Default {
+        file = "\TheProgrammer_IphoneXI\anims\LEG_Phone_Call.rtm";
+        speed = 1;
+        looped = 1;
+        mask = "handsWeapon";
+        rightHandIKBeg = 1;
+        rightHandIKEnd = 1;
+    };
+    
+    class LEG_Phone_Selfie: Default {
+        file = "\TheProgrammer_IphoneXI\anims\LEG_Phone_Selfie.rtm";
+        speed = 1;
+        looped = 1;
+        mask = "handsWeapon";
+        rightHandIKBeg = 1;
+        rightHandIKEnd = 1;
+    };
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 📱 iPhone 3D ITEM
+// ═══════════════════════════════════════════════════════════════
+
+class CfgWeapons {
+    class ItemCore;
+    class InventoryItem_Base_F;
+    
+    class LEG_iPhone_3D: ItemCore {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "iPhone XI (Orange)";
+        descriptionShort = "Smartphone avec forfait Orange requis";
+        model = "\TheProgrammer_IphoneXI\models\iphone_xi.p3d";
+        picture = "\TheProgrammer_IphoneXI\ui\iphone_icon_ca.paa";
+        
+        class ItemInfo: InventoryItem_Base_F {
+            mass = 2;
+        };
+    };
+};
+
+class CfgVehicles {
+    class Item_Base_F;
+    
+    class LEG_iPhone_3D_Item: Item_Base_F {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "iPhone XI (Orange)";
+        author = "Legion RP";
+        vehicleClass = "Items";
+        
+        class TransportItems {
+            class LEG_iPhone_3D {
+                name = "LEG_iPhone_3D";
+                count = 1;
+            };
+        };
+    };
+};
+
+// ═══════════════════════════════════════════════════════════════
+// ✅ FIN DE LA CONFIGURATION
+// ═══════════════════════════════════════════════════════════════

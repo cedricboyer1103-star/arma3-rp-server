@@ -1,0 +1,34 @@
+═══════════════════════════════════════════════════════════════
+📱 LEGION RP MALDEN - IPHONE XI INTÉGRÉ
+═══════════════════════════════════════════════════════════════
+
+✅ MISSION PRÊTE À L'EMPLOI
+
+🎯 CE QUI A ÉTÉ FAIT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ description.ext modifié (Sounds + CfgDebriefing)
+✅ CfgRemoteExec.hpp créé et inclus
+✅ initPlayerLocal.sqf modifié (init The Programmer)
+✅ fn_usePhone3D.sqf modifié (ouverture iPhone XI)
+✅ Tous les includes The Programmer configurés
+
+🚀 INSTALLATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Copier ce dossier dans Documents\Arma 3\missions\
+2. Ouvrir dans l'éditeur Arma 3
+3. Exporter en .pbo
+4. Uploader sur le serveur
+
+📁 FICHIER SERVEUR À AJOUTER:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Copier: The-Programmer/Iphone_XI - SERVER/iphone_xi.pbo
+Vers: @The_Programmer/addons/ (serveur)
+
+🎮 UTILISATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Acheter carte SIM Orange (50€)
+2. Souscrire à un forfait
+3. Appuyer Y pour sortir l'iPhone
+4. L'interface iPhone XI s'ouvre automatiquement
+
+✅ SYSTÈME ORANGE + IPHONE XI FONCTIONNEL
