@@ -60,7 +60,9 @@ REM Start the server
 echo Starting server with parameters:
 echo "%SERVER_EXEC%" %PARAMS%
 echo.
-start "" "%SERVER_EXEC%" %PARAMS%
+"%SERVER_EXEC%" %PARAMS%
 
-echo Server started!
+REM Server has stopped
+echo.
+echo Server has stopped.
 pause

@@ -1,6 +1,9 @@
 #!/bin/bash
 # Arma 3 RP Server - Startup Script
 
+# Get the full path to this script
+SCRIPT_PATH="$(readlink -f "$0")"
+
 # Configuration
 SERVER_DIR="/home/arma3server"
 SERVER_PORT=2302
@@ -66,4 +69,4 @@ echo ""
 # If server crashes, restart after 5 seconds
 echo "Server stopped. Waiting 5 seconds before restart..."
 sleep 5
-exec $0
+exec "$SCRIPT_PATH"
