@@ -49,7 +49,7 @@ steamcmd +login anonymous +force_install_dir /home/arma3server +app_update 23378
 
 ```bash
 cd /home/arma3server  # or C:\arma3server
-git clone https://github.com/cedricboyer1103-star/arma3-rp-server.git config
+git clone <your-repository-url> config
 ```
 
 ### 4. Copy Configuration Files

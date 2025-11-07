@@ -52,7 +52,7 @@ echo "Mods: $MODS"
 echo "======================================"
 
 # Change to server directory
-cd $SERVER_DIR
+cd "$SERVER_DIR"
 
 # Start the server
 echo "Starting server with parameters:"

@@ -29,7 +29,7 @@ arma3-rp-server/
 
 1. **Cloner ce repository dans votre dossier serveur Arma 3**
    ```bash
-   git clone https://github.com/cedricboyer1103-star/arma3-rp-server.git
+   git clone <url-de-votre-repository>
    ```
 
 2. **Copier les fichiers de configuration**

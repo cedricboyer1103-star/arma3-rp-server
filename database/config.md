@@ -6,7 +6,7 @@ host: localhost
 port: 3306
 database: arma3_rp
 username: arma3_user
-password: changeme
+password: CHANGE_ME_SECURE_PASSWORD
 
 ## Tables
 
