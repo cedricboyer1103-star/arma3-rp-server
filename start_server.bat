@@ -49,13 +49,18 @@ echo Mods: %MODS%
 echo ======================================
 
 REM Change to server directory
-cd /d %SERVER_DIR%
+cd /d "%SERVER_DIR%"
+if errorlevel 1 (
+    echo ERROR: Failed to change to server directory: %SERVER_DIR%
+    pause
+    exit /b 1
+)
 
 REM Start the server
 echo Starting server with parameters:
-echo %SERVER_EXEC% %PARAMS%
+echo "%SERVER_EXEC%" %PARAMS%
 echo.
-start "" %SERVER_EXEC% %PARAMS%
+start "" "%SERVER_EXEC%" %PARAMS%
 
 echo Server started!
 pause

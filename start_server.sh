@@ -52,13 +52,16 @@ echo "Mods: $MODS"
 echo "======================================"
 
 # Change to server directory
-cd "$SERVER_DIR"
+if ! cd "$SERVER_DIR"; then
+    echo "ERROR: Failed to change to server directory: $SERVER_DIR"
+    exit 1
+fi
 
 # Start the server
 echo "Starting server with parameters:"
 echo "$SERVER_EXEC $PARAMS"
 echo ""
-$SERVER_EXEC $PARAMS
+"$SERVER_EXEC" $PARAMS
 
 # If server crashes, restart after 5 seconds
 echo "Server stopped. Waiting 5 seconds before restart..."
