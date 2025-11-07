@@ -35,10 +35,10 @@ class CBX_Interaction  {
     enableSimulation = true;
     class controls {
 
-		class Logo_pic: life_RscPicture
+		class Logo_pic: Life_RscPicture
 		{
 			idc = 1200;
-			moving = 1;	
+			moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
@@ -46,80 +46,80 @@ class CBX_Interaction  {
 			h = 0.44 * safezoneH;
 		};
 
-		class Picture_1: life_RscPicture
+		class Picture_1: Life_RscPicture
 		{
 			idc = 1201;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
 			w = 0.2475 * safezoneW;
 			h = 0.44 * safezoneH;
 		};
-		class Picture_2: life_RscPicture
+		class Picture_2: Life_RscPicture
 		{
 			idc = 1202;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
 			w = 0.2475 * safezoneW;
 			h = 0.44 * safezoneH;
 		};
-		class Picture_3: life_RscPicture
+		class Picture_3: Life_RscPicture
 		{
 			idc = 1203;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
 			w = 0.2475 * safezoneW;
 			h = 0.44 * safezoneH;
 		};
-		class Picture_4: life_RscPicture
+		class Picture_4: Life_RscPicture
 		{
 			idc = 1204;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
 			w = 0.2475 * safezoneW;
 			h = 0.44 * safezoneH;
 		};
-		class Picture_5: life_RscPicture
+		class Picture_5: Life_RscPicture
 		{
 			idc = 1205;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
 			w = 0.2475 * safezoneW;
 			h = 0.44 * safezoneH;
 		};
-		class Picture_6: life_RscPicture
+		class Picture_6: Life_RscPicture
 		{
 			idc = 1206;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
 			w = 0.2475 * safezoneW;
 			h = 0.44 * safezoneH;
 		};
-		class Picture_7: life_RscPicture
+		class Picture_7: Life_RscPicture
 		{
 			idc = 1207;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
 			w = 0.2475 * safezoneW;
 			h = 0.44 * safezoneH; 
 		};
-		class Picture_8: life_RscPicture
+		class Picture_8: Life_RscPicture
 		{
 			idc = 1208;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.37625 * safezoneW + safezoneX;
 			y = 0.28 * safezoneH + safezoneY;
@@ -129,7 +129,7 @@ class CBX_Interaction  {
         class Text_1: Life_RscStructuredText
 		{
 			idc = 2400;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.417501 * safezoneW + safezoneX;
 			y = 0.4406 * safezoneH + safezoneY;
@@ -139,9 +139,9 @@ class CBX_Interaction  {
 		class Text_2: Life_RscStructuredText
 		{
 			idc = 2401;
-            moving = 1;	
+                moving = 1;  
 			text = "";
-            x = 0.4505 * safezoneW + safezoneX;
+                x = 0.4505 * safezoneW + safezoneX;
 			y = 0.3702 * safezoneH + safezoneY;
 			w = 0.0464063 * safezoneW;
 			h = 0.0352 * safezoneH;
@@ -149,7 +149,7 @@ class CBX_Interaction  {
 		class Text_3: Life_RscStructuredText
 		{
 			idc = 2402;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.503094 * safezoneW + safezoneX;
 			y = 0.3702 * safezoneH + safezoneY;
@@ -159,7 +159,7 @@ class CBX_Interaction  {
 		class Text_4: Life_RscStructuredText
 		{
 			idc = 2403;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.536094 * safezoneW + safezoneX;
 			y = 0.445 * safezoneH + safezoneY;
@@ -169,7 +169,7 @@ class CBX_Interaction  {
 		class Text_5: Life_RscStructuredText
 		{
 			idc = 2404;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.536094 * safezoneW + safezoneX;
 			y = 0.5198 * safezoneH + safezoneY;
@@ -179,7 +179,7 @@ class CBX_Interaction  {
 		class Text_6: Life_RscStructuredText
 		{
 			idc = 2405;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.503093 * safezoneW + safezoneX;
 			y = 0.588 * safezoneH + safezoneY;
@@ -189,7 +189,7 @@ class CBX_Interaction  {
 		class Text_7: Life_RscStructuredText
 		{
 			idc = 2406;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.451531 * safezoneW + safezoneX;
 			y = 0.588 * safezoneH + safezoneY;
@@ -199,7 +199,7 @@ class CBX_Interaction  {
 		class Text_8: Life_RscStructuredText
 		{
 			idc = 2407;
-            moving = 1;	
+                moving = 1;  
 			text = "";
 			x = 0.4175 * safezoneW + safezoneX;
 			y = 0.522 * safezoneH + safezoneY;
@@ -209,7 +209,7 @@ class CBX_Interaction  {
         class Button_1: Life_Button_Invisible_CBX
 		{
 			idc = 2600;
-            moving = 1;	
+                moving = 1;  
 			x = 0.422656 * safezoneW + safezoneX;
 			y = 0.434 * safezoneH + safezoneY;
 			w = 0.04125 * safezoneW;
@@ -218,7 +218,7 @@ class CBX_Interaction  {
 		class Button_2: Life_Button_Invisible_CBX
 		{
 			idc = 2601;
-            moving = 1;	
+                moving = 1;  
 			x = 0.45875 * safezoneW + safezoneX;
 			y = 0.368 * safezoneH + safezoneY;
 			w = 0.0391876 * safezoneW;
@@ -227,7 +227,7 @@ class CBX_Interaction  {
 		class Button_3: Life_Button_Invisible_CBX
 		{
 			idc = 2602;
-            moving = 1;	
+                moving = 1;  
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.368 * safezoneH + safezoneY;
 			w = 0.0402188 * safezoneW;
@@ -236,7 +236,7 @@ class CBX_Interaction  {
 		class Button_4: Life_Button_Invisible_CBX
 		{
 			idc = 2603;
-            moving = 1;	
+                moving = 1;  
 			x = 0.54125 * safezoneW + safezoneX;
 			y = 0.434 * safezoneH + safezoneY;
 			w = 0.0402188 * safezoneW;
@@ -245,7 +245,7 @@ class CBX_Interaction  {
 		class Button_5: Life_Button_Invisible_CBX
 		{
 			idc = 2604;
-            moving = 1;	
+                moving = 1;  
 			x = 0.54125 * safezoneW + safezoneX;
 			y = 0.511 * safezoneH + safezoneY;
 			w = 0.0402188 * safezoneW;
@@ -254,7 +254,7 @@ class CBX_Interaction  {
 		class Button_6: Life_Button_Invisible_CBX
 		{
 			idc = 2605;
-            moving = 1;	
+                moving = 1;  
 			x = 0.505156 * safezoneW + safezoneX;
 			y = 0.577 * safezoneH + safezoneY;
 			w = 0.0402188 * safezoneW;
@@ -263,7 +263,7 @@ class CBX_Interaction  {
 		class Button_7: Life_Button_Invisible_CBX
 		{
 			idc = 2606;
-            moving = 1;	
+                moving = 1;  
 			x = 0.454626 * safezoneW + safezoneX;
 			y = 0.5792 * safezoneH + safezoneY;
 			w = 0.0402188 * safezoneW;
@@ -272,7 +272,7 @@ class CBX_Interaction  {
 		class Button_8: Life_Button_Invisible_CBX
 		{
 			idc = 2607;
-            moving = 1;	
+                moving = 1;  
 			x = 0.422656 * safezoneW + safezoneX;
 			y = 0.511 * safezoneH + safezoneY;
 			w = 0.0391876 * safezoneW;
