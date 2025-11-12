@@ -1,0 +1,56 @@
+# Arma 3 Server Files
+*.log
+*.rpt
+*.bidmp
+*.mdmp
+*.txt
+
+# Server Profiles
+SC/
+
+# Database
+*.db
+*.sqlite
+
+# BattlEye
+BattlEye/
+
+# Logs
+logs/*.log
+logs/*.txt
+!logs/README.md
+
+# Mission Files (too large, should be managed separately)
+mpmissions/*.pbo
+!mpmissions/README.md
+
+# Addons and Mods (too large, should be managed separately)
+addons/@*/
+!addons/README.md
+
+# Keys (generated)
+keys/*.bikey
+!keys/README.md
+
+# Temporary Files
+*.tmp
+*.temp
+~*
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+*.bak
+*.swp
+*~
+
+# Compiled Files
+*.pbo
+
+# Private Configuration (uncomment if you want to keep credentials private)
+# server.cfg
+# basic.cfg
+# database/config.md
